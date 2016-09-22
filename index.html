@@ -3,25 +3,52 @@
 <head>
     <meta charset="utf-8">
     <title>Janice Chan - Landing Page</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: darkred;
+        }
+        
+        li {
+            float: left;
+        }
+       
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 10px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: darkgray;
+        }
+        #square { width: 170px; height: 30px; background: #f6b7c0;}
+    </style>
+   
+        <!-- I pulled the code from http://www.w3schools.com/css/css_navbar.asp
+
+I understand how the code works because adding the <style></style> allows me to style my navigation bar. Changing the list-style-type, margin, and padding gets rid of the margin andbullet points. The background color gives the navigation bar a color. float allows me to make the navigation bar horizontal and when I type in left, the words would go to the left. All of this allows me to have a horizontal bar, which is what I want. Changing the display makes a difference in the area that is clickable. Changing the color of the text allows it to pop out against the backgrounf color. The padding spaces out each topic so it does not look cluttered and setting the text-decoration to none gets rid of the underline that was there before. Lastly, the hover allows the button/text to be highlighted when it is hovered over. 
+  -->
+  
 </head>
+
 <body>
-<h2>About</h2>
+    <h1>Janice Chan</h1><div id="square"></div>
+    <h2>IML 300: Reading and Writing the Web</h2>
+    
 
-<li><a href="about.html">About me page</a></li>
+    <ul style = "list-style-type: none">
+        <li><a href="about.html">About Janice</a></li>
 
-<h2>Links</h2>
+	    <li><a href="links.html">Links</a></li>
 
-<ul style="list-style-type:disc">
-	<li><a href="links.html">Links page</a></li>
-
-</ul>
-
-<h2>Assignments</h2>
-
-<ul style="list-style-type:disc">
-    <li><a href="assignments/week1.html">Week1</a></li>
-    <li><a href="assignments/week2.html">Week2</a></li>
-</ul>
-
+        <li><a href="assignments.html">Assignments</a></li>
+    </ul>
+    
 </body>
 </html>
