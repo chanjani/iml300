@@ -7,12 +7,16 @@
         
         body {
             background-image: url("images/3-san-francisco-city-skyline-michael-tompsett.jpg");
+            background-position: 100px 150px;
+            background-attachment: scroll;
         }
         
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
+            justify-content: space-around;
+            display: flex;
             overflow: hidden;
             background-color: steelblue;
         }
@@ -25,14 +29,15 @@
             display: block;
             color: white;
             text-align: center;
-            padding: 10px 10px;
+            padding: 5px 100px;
             text-decoration: none;
+            font-family: "Arial Black", Gadget, sans-serif;
         }
         
         li a:hover {
             background-color: darkgray;
         }
-        #square {width: 200px; height: 30px; background: #fce7ea; margin: auto;}
+        
     </style>
    
         <!-- I pulled the code from http://www.w3schools.com/css/css_navbar.asp
@@ -46,18 +51,23 @@ I understand how the code works because adding the <style></style> allows me to 
 </head>
 
 <body class="w3-container">
-    <h1>Janice Chan</h1><h1><div id="square"></div></h1>
+    <h1>Janice Chan</h1>
     <h2>IML 300: Reading and Writing the Web</h2>
-    <style>
     
+    <style>
         h1 {
             text-align: center;
+            font-family: "Arial Black", Gadget, sans-serif;
+            font-size: 50px;
+            color: black;
         }
     
         h2 {
             text-align: center;
+            font-family: "Arial Black", Gadget, sans-serif;
+            font-size: 20px;
+            color: black;
         }
-    
     </style>
     
        <div class="blurb">
@@ -65,12 +75,29 @@ I understand how the code works because adding the <style></style> allows me to 
     </div>
 
     <ul style = "list-style-type: none">
+        <li><a href="index.html">Home</a></li>
+       
         <li><a href="about.html">About</a></li>
 
 	    <li><a href="links.html">Links</a></li>
 
         <li><a href="assignments.html">Assignments</a></li>
     </ul>
+    
+     <p>
+        My signature color is called Amour. I chose it as my signature color because I like soft shades of pink. I think that it is a sweet and calming color. Also, I love the name of this color because Amour is love in French.
+    </p>
+    
+    <style>
+        p {
+            padding: 10px 30px;
+            background-color: #fce7ea;
+            margin-left: 360px;
+            margin-right: 360px;
+            margin-top: 50px;
+            font-family: "Arial", Helvetica, sans-serif;
+        }
+    </style>
     
     
 </body>
