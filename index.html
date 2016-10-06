@@ -1,89 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Janice Chan - Landing Page</title>
-    <style>
-        
-        body {
-            background-image: url("images/3-san-francisco-city-skyline-michael-tompsett.jpg");
-            background-position: 100px 150px;
-            background-attachment: scroll;
-        }
-        
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            justify-content: space-around;
-            display: flex;
-            overflow: hidden;
-            background-color: steelblue;
-        }
-        
-        li {
-            float: left;
-        }
-       
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 5px 100px;
-            text-decoration: none;
-            font-family: "Arial Black", Gadget, sans-serif;
-        }
-        
-        li a:hover {
-            background-color: darkgray;
-        }
-        
-    </style>
-   
-        <!-- I pulled the code from http://www.w3schools.com/css/css_navbar.asp
+<html>
+<title>W3.CSS Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<body>
 
-I understand how the code works because adding the <style></style> allows me to style my navigation bar. Changing the list-style-type, margin, and padding gets rid of the margin andbullet points. The background color gives the navigation bar a color. float allows me to make the navigation bar horizontal and when I type in left, the words would go to the left. All of this allows me to have a horizontal bar, which is what I want. Changing the display makes a difference in the area that is clickable. Changing the color of the text allows it to pop out against the backgrounf color. The padding spaces out each topic so it does not look cluttered and setting the text-decoration to none gets rid of the underline that was there before. Lastly, the hover allows the button/text to be highlighted when it is hovered over. 
-  -->
+<!-- Header -->
+<header class="w3-display-container w3-content" style="max-width:1500px">
+  <img class="w3-image" src="images/3-san-francisco-city-skyline-michael-tompsett.jpg" alt="SF" width="1500" height="600">
+  <div class="w3-display-topmiddle w3-padding-xlarge w3-border w3-wide w3-text-black w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">Janice Chan</h1>
+    <h5 class="w3-hide-medium w3-hide-small">IML 300: Reading and Writing the Web</h5>
+  </div>
   
-<link rel="stylesheet"href="css/w3.css">
-<link rel="stylesheet"href="css/custom-w3.css">
-
-</head>
-
-<body class="w3-container">
-    <h1>Janice Chan</h1>
-    <h2>IML 300: Reading and Writing the Web</h2>
-    
-    <style>
-        h1 {
-            text-align: center;
+  
+  <ul class="w3-navbar w3-round w3-display-bottommiddle w3-hide-small" style="bottom:10px">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="links.html">Links</a></li>
+    <li><a href="assignments.html">Assignments</a></li>
+  </ul>
+  
+  <style>
+        h1{
             font-family: "Arial Black", Gadget, sans-serif;
-            font-size: 50px;
-            color: black;
         }
-    
-        h2 {
-            text-align: center;
-            font-family: "Arial Black", Gadget, sans-serif;
-            font-size: 20px;
-            color: black;
-        }
-    </style>
-    
-       <div class="blurb">
         
-    </div>
+        h5{
+            font-family: "Arial Black", Gadget, sans-serif;
+        }
 
-    <ul style = "list-style-type: none">
-        <li><a href="index.html">Home</a></li>
-       
-        <li><a href="about.html">About</a></li>
+      ul{
+          background-color: steelblue;
+          font-family: "Arial Black", Gadget, sans-serif;
+          color: white;
+      }
+    </style>
+  
+</header>
 
-	    <li><a href="links.html">Links</a></li>
-    
-        <li><a href="assignments.html">Assignments</a></li>
-    </ul>
-    
 <br>
      <p>
         My signature color is called Amour. I chose it as my signature color because I like soft shades of pink. I think that it is a sweet and calming color. Also, I love the name of this color because Amour is love in French.
@@ -93,17 +48,20 @@ I understand how the code works because adding the <style></style> allows me to 
         p {
             padding: 10px 20px;
             background-color: #fce7ea;
-            margin-left: 350px;
-            margin-right: 350px;
+            margin-left: 300px;
+            margin-right: 300px;
             font-family: "Arial", Helvetica, sans-serif;
         }
         
-        a {
-            font-size: 17px;
-        }
-        
     </style>
+
+<br>
+<br>
     
-    
+<div class="w3-light-grey w3-padding-xlarge w3-padding-32 w3-margin-top" id="contact">
+    </div>
+
 </body>
 </html>
+
+<!-- I based this off the template from w3schools: http://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_photo3&stacked=h --!>
