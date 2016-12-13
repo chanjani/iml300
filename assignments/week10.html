@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+                      $("#number1").click(function(){
+                          $("#janice").animate({width: '200px'});
+                      });
+
+                    $("#number2").click(function(){
+                          $("#janice").hide();
+                    });
+        
+                    $("#number3").click(function(){
+                          $("#janice").show();
+                    });
+        
+                    $("#number4").click(function(){
+                          $("#janice").animate({width: '100px'});
+                      });
+        
+                    $("#number5").click(function(){
+                          $("#janice").slideUp();
+                      });
+        
+                    $("#number6").click(function(){
+                          $("#janice").slideDown();
+                      });
+    });
+    </script>
+</head>
+<body>
+ 
+ <button id="number1">Click me!</button>
+ <button id="number2">Click me 2!</button>
+ <button id="number3">Click me 3!</button>
+ <button id="number4">Click me 4!</button>
+ <button id="number5">Click me 5!</button>
+ <button id="number6">Click me 6!</button>
+ 
+ <div id="janice" style="background: teal; height: 150px; width: 100px; margin: 10px;"></div>
+ 
+</body>
+</html>
+
+
+<!--Based on the w3schools code-->
